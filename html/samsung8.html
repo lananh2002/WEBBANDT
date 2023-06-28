@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kính ảo</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: auto;
+            text-align: center;
+        }
+        
+        ul {
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+            display: inline;
+        }
+        
+        p {
+            font-weight: 700;
+            color: green;
+            text-shadow: -10px -3px 5px yellowgreen;
+        }
+        
+        a {
+            text-decoration: none;
+            color: red;
+        }
+        
+        li {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border" style="height:auto;">
+                <a href="../html/samsung8.html"><img class="hieuung" src="../img/samsung8.jpg" alt="anh1" height="300px"></a>
+                <p>Kính thực tế ảo chính hãng</p> <a href="" id="gia">Giá: 990.000 VND</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border">
+                <h2>Thông tin sản phẩm</h2>
+                <p>Xuất sứ: Việt Nam <br> Số lượng còn: 1 <br> Free Ship <br>
+                    <h3>Đặc điểm nổi bật</h3>
+                     <br>  là sản phẩm sử dụng công nghệ VR, có khả năng tái tạo, mô phỏng toàn bộ không gian nhờ vào khả năng xử lý bằng máy tính, một cách chân thật và sống động.
+                </p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border">
+                <h2>Mô tả sản phẩm </h2>
+                💥 CHÚ Ý: DO SHOP ĐỂ PHÂN LOẠI NHIU SP CHO CÁC BẠN DỄ LỰA CHỌN LÊN CÁC BẠN LƯU Ý CHỌN MUA ĐÚNG THEO PHÂN LOẠI HÀNG MÌNH ĐẶT NHÉ. SHOP GIAO ĐÚNG THEO PHÂN LOẠI HÀNG Ạ MỖI PHÂN LOẠI HÀNG SHOP CÓ ẢNH VÀ TÊN SẢN PHẨM SHOP SẼ GIAO ĐI Ạ,CÁC BẠN THẮC MẮC GÌ LIÊN HỆ SHOP ĐỂ ĐƯỢC TƯ VẤN.MỌI TRƯỜNG HỢP CÁC BẠN CHỌN ĐẶT THEO PHÂN LOẠI  MÀ BÁO LẠI LÀ KHÔNG ĐÚNG SẢN PHẨM THÌ LƯU Ý SHOP SẼ K GIẢI QUYẾT Ạ. 🤷‍♂️
+
+     <br>           ===================
+                
+         <br>       Kính thực tế ảo là một trong những công nghệ phổ biến nhất hiện nay. Nó cho phép người dùng có trải nghiệm tuyệt vời về thực tế ảo bằng cách sử dụng kính thực tế ảo. Kính thực tế ảo có thể được sử dụng để xem phim 3D, chơi game, và thực hiện những nhiệm vụ khác. Nếu bạn muốn trải nghiệm những điều thú vị, hãy sử dụng kính thực tế ảo 3D. Kính thực tế ảo 3D có thể được sử dụng để xem phim 3D, chơi game, và thực hiện những nhiệm vụ khác. Nếu bạn muốn trải nghiệm những điều thú vị, hãy sử dụng kính thực tế ảo 
+                <br>
+                <br>
+                <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#purchaseModal"> Mua Hàng</button>
+  
+  <!-- Modal -->
+  <div class="modal" id="purchaseModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2>Mua Hàng</h2>
+                  <button class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <form id="purchaseForm">
+                      <div class="row form-group">
+                          <label for="email" class="col-3">Email</label>
+                          <div class="col-9">
+                              <input placeholder="Nhập email" type="text" name="email" id="email" class="form-control">
+                              <div id="emailError" class="text-danger"></div>
+                          </div>
+                      </div>
+                      <div class="row form-group">
+                          <label for="phone" class="col-3">Số điện thoại</label>
+                          <div class="col-9">
+                              <input placeholder="Nhập số điện thoại" type="text" name="phone" id="phone" class="form-control">
+                              <div id="phoneError" class="text-danger"></div>
+                          </div>
+                      </div>
+                      <div class="row form-group">
+                          <div class="col-12 text-center">
+                              <input type="submit" name="" id="" class="btn btn-success" value="Mua hàng">
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <input type="button" value="Đóng" data-dismiss="modal" class="btn btn-danger text-uppercase">
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+    $(document).ready(function() {
+      $('#purchaseForm').on('submit', function(event) {
+        event.preventDefault();
+  
+        // Email validation
+        const email = $('#email').val();
+        const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+        if (!emailRegex.test(email)) {
+          $('#emailError').text('Email không hợp lệ');
+        } else {
+          $('#emailError').text('');
+        }
+  
+        // Phone validation
+        const phone = $('#phone').val();
+        const phoneRegex = /^\d{10}$/;
+        if (!phoneRegex.test(phone)) {
+        $('#phoneError').text('Số điện thoại không hợp lệ');
+        } else {
+        $('#phoneError').text('');
+        }
+                // If both email and phone are valid, submit form
+        if (emailRegex.test(email) && phoneRegex.test(phone)) {
+            $('#purchaseForm').unbind('submit').submit();
+        }
+        });
+    </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border">
+                <A href="../html/trangchu.html">Trở về Trang Chủ</A>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

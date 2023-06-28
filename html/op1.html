@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ốp lưng macbook </title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: auto;
+            text-align: center;
+        }
+        
+        ul {
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+            display: inline;
+        }
+        
+        p {
+            font-weight: 700;
+            color: green;
+            text-shadow: -10px -3px 5px yellowgreen;
+        }
+        
+        a {
+            text-decoration: none;
+            color: red;
+        }
+        
+        li {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border" style="height :auto;">
+                <a href=""><img class="hieuung" src="../img/apple1.jpg" alt="anh1" height="300px"></a>
+                <p>ỐP LƯNG MACBOOK</p> <a href="" id="gia">299.999 VND</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border">
+                <h2>Thông tin sản phẩm</h2>
+                <p>Xuất sứ: Việt Nam <br> Số lượng còn: 10 <br> Free Ship : YES <br>
+                    <h3>Đặc điểm nổi bật</h3> <br> Thiết kế mỏng nhẹ, gọn gàng, mặt lưng phẳng mịn, cầm thoải mái. <br> Bảo vệ tốt các góc và vùng camera. <br> Chế tác từ nhựa cứng viền dẻo, dễ dàng tháo lắp và tăng cường bảo vệ. <br>
+                </p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border">
+                <h2>Mô tả sản phẩm </h2>
+                *Lưu ý: SIZE KHÁC KHÔNG CÓ PHẦN LỰA CHỌN " SIZE KHÁC GHI CHÚ '' RỒI ĐẶT HÀNG NOTE PHẦN GHI CHÚ CHO SHOP SIZE MÁY CỦA ANH CHỊ NHA!!!
+                <br>- Thông tin sản phẩm : <br>+ Với tông màu nổi bật, ốp tạo ấn tượng và điểm nhấn nổi bật cho Mácbook của bạn + Chất liệu nhựa cao cấp ABS, bên ngoài phủ lớp nhựa nhám sang trọng, cảm giác mịn tay khi cầm + Ngăn ngừa các vết trày xước
+                hiệu quả, không gây ảnh hướng đển các lỗ bức xạ của thiết bị. 
+                <br> + Ốp gồm 2 mặt rời nhau, tháo lắp dễ dàng: Mặt lưng và mặt đáy. 
+               <br> + Combo kèm phủ phím với chức năng chống bụi bẩn, chống nước ... tăng thêm sự sang trọng cho chiếc Mácbook
+                của bạn <br>+ Khi mua ốp bạn sẽ được tặng kèm nút chống bụi và bộ chống gãy đầu dây sạc cực kì tiện ích khi sử dụng Mácbook (nút chống bụi bán lẻ : 30k , bộ chống gãy đầu dây sạc : 20k , khăn lâu màn hình cao cấp ) <br>+ Sản phẩm có nhiều
+                size phù hợp với đủ hết các loại Mácbook trên thị trường
+                <br>
+                <br>
+                <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#purchaseModal"> Mua Hàng</button>
+  
+  <!-- Modal -->
+  <div class="modal" id="purchaseModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2>Mua Hàng</h2>
+                  <button class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <form id="purchaseForm">
+                      <div class="row form-group">
+                          <label for="email" class="col-3">Email</label>
+                          <div class="col-9">
+                              <input placeholder="Nhập email" type="text" name="email" id="email" class="form-control">
+                              <div id="emailError" class="text-danger"></div>
+                          </div>
+                      </div>
+                      <div class="row form-group">
+                          <label for="phone" class="col-3">Số điện thoại</label>
+                          <div class="col-9">
+                              <input placeholder="Nhập số điện thoại" type="text" name="phone" id="phone" class="form-control">
+                              <div id="phoneError" class="text-danger"></div>
+                          </div>
+                      </div>
+                      <div class="row form-group">
+                          <div class="col-12 text-center">
+                              <input type="submit" name="" id="" class="btn btn-success" value="Mua hàng">
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <input type="button" value="Đóng" data-dismiss="modal" class="btn btn-danger text-uppercase">
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <script>
+    $(document).ready(function() {
+      $('#purchaseForm').on('submit', function(event) {
+        event.preventDefault();
+  
+        // Email validation
+        const email = $('#email').val();
+        const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+        if (!emailRegex.test(email)) {
+          $('#emailError').text('Email không hợp lệ');
+        } else {
+          $('#emailError').text('');
+        }
+  
+        // Phone validation
+        const phone = $('#phone').val();
+        const phoneRegex = /^\d{10}$/;
+        if (!phoneRegex.test(phone)) {
+        $('#phoneError').text('Số điện thoại không hợp lệ');
+        } else {
+        $('#phoneError').text('');
+        }
+                // If both email and phone are valid, submit form
+        if (emailRegex.test(email) && phoneRegex.test(phone)) {
+            $('#purchaseForm').unbind('submit').submit();
+        }
+        });
+    </script>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border">
+                <A href="../html/trangchu.html">Trở về Trang Chủ</A>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Watch</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        body {
+            margin: auto;
+            text-align: center;
+        }
+        
+        ul {
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+            display: inline;
+        }
+        
+        p {
+            font-weight: 700;
+            color: green;
+            text-shadow: -10px -3px 5px yellowgreen;
+        }
+        
+        a {
+            text-decoration: none;
+            color: red;
+        }
+        
+        li {
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+          $('#purchaseForm').on('submit', function(event) {
+            event.preventDefault();
+      
+            // Email validation
+            const email = $('#email').val();
+            const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+            if (!emailRegex.test(email)) {
+              $('#emailError').text('Email không hợp lệ');
+            } else {
+              $('#emailError').text('');
+            }
+      
+            // Phone validation
+            const phone = $('#phone').val();
+            const phoneRegex = /^\d{10}$/;
+            if (!phoneRegex.test(phone)) {
+            $('#phoneError').text('Số điện thoại không hợp lệ');
+            } else {
+            $('#phoneError').text('');
+            }
+                    // If both email and phone are valid, submit form
+            if (emailRegex.test(email) && phoneRegex.test(phone)) {
+                $('#purchaseForm').unbind('submit').submit();
+            }
+            });
+        </script>
+</head>
+
+<body>
+    <div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border" style="height:auto;">
+                <a href=""><img class="hieuung" src="../img/apple12.jpg" alt="anh1" height="300px"></a>
+                <p>Apple Watch</p> <a href="" id="gia">4.199.999 VND</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border">
+                <h2>Thông tin sản phẩm</h2>
+                <p>Xuất sứ: Việt Nam <br> Số lượng còn: 2 <br> Free Ship : YES <br>
+                    <h3>Đặc điểm nổi bật</h3> <br> Thiết kế mỏng nhẹ, gọn gàng, mặt lưng phẳng mịn, cầm thoải mái. <br> Bảo vệ tốt các góc và vùng camera. <br> Chế tác từ nhựa cứng viền dẻo, dễ dàng tháo lắp và tăng cường bảo vệ. <br>
+                </p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 border">
+                <h2>Mô tả sản phẩm </h2>
+                𝐃𝐚̂𝐲 Đ𝐞𝐨 𝐀𝐩𝐩𝐥𝐞 𝐖𝐚𝐭𝐜𝐡 𝐓𝐡𝐞́𝐩 𝐊𝐡𝐨̂𝐧𝐠 𝐆𝐢̉ - 𝐊𝐡𝐨́𝐚 𝐍𝐚𝐦 𝐂𝐡𝐚̂𝐦 𝐝𝐚̀𝐧𝐡 𝐜𝐡𝐨 𝐀𝐩𝐩𝐥𝐞 𝐖𝐚𝐭𝐜𝐡 𝐒𝐞𝐫𝐢𝐞𝐬 𝟓/𝟒/𝟑/𝟐/𝟏 - 𝐡𝐚̀𝐧𝐠 𝐩𝐡𝐮̣ 𝐤𝐢𝐞̣̂𝐧
+                <br> » Dây Apple Watch kiểu thép lưới Milanese Loop khóa nam châm (phụ kiện loại chuẩn đẹp) 
+                <br>» Hàng phụ kiện thay thế cho Apple Watch, dùng chung từ tất cả các series từ 5/4/3/2/1
+                <br>» Chất liệu thép cao cấp không gỉ bền màu, màu sắc sang trọng   
+                <br>» Tích hợp sẳn Adapter thuận tiện, khoá Magnetic chắc chắn
+                <br>» Quai thép lưới Milanese thời trang, lịch lãm
+                <br>» Kiểu khóa nam châm dán hít độc đáo có thể điều chỉnh tùy ý theo kích thước cổ tay
+                <br>» Kích thước 38mm cho series 3|2|1 38mm và series 5/4 40mm
+        <br> <b>MÔ TẢ: </b>
+                <br>1.100% hàng chọn lọc mới chất lượng cao
+                <br>2. Dễ dàng lắp và tháo, hoàn toàn phù hợp với cho đồng hồ của bạn
+                <br>3. Hàng thủ công tinh xảo và thiết kế kiểu nam châm dán hít độc đáo
+                <br>4. Hộp đựng sang trọng thích hợp hoàn hảo làm quà tặng cho bạn bè và người thân của bạn.
+                <br>
+                <br>
+                <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#purchaseModal"> Mua Hàng</button>
+  
+  <!-- Modal -->
+  <div class="modal" id="purchaseModal">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h2>Mua Hàng</h2>
+                  <button class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <form id="purchaseForm">
+                      <div class="row form-group">
+                          <label for="email" class="col-3">Email</label>
+                          <div class="col-9">
+                              <input placeholder="Nhập email" type="text" name="email" id="email" class="form-control">
+                              <div id="emailError" class="text-danger"></div>
+                          </div>
+                      </div>
+                      <div class="row form-group">
+                          <label for="phone" class="col-3">Số điện thoại</label>
+                          <div class="col-9">
+                              <input placeholder="Nhập số điện thoại" type="text" name="phone" id="phone" class="form-control">
+                              <div id="phoneError" class="text-danger"></div>
+                          </div>
+                      </div>
+                      <div class="row form-group">
+                          <div class="col-12 text-center">
+                              <input type="submit" name="" id="" class="btn btn-success" value="Mua hàng">
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <input type="button" value="Đóng" data-dismiss="modal" class="btn btn-danger text-uppercase">
+              </div>
+          </div>
+      </div>
+  </div>
+  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 border">
+                <A href="../html/trangchu.html">Trở về Trang Chủ</A>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
